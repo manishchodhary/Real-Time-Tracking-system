@@ -28,7 +28,7 @@ io.on("connection", function (socket) {
   console.log("connected");
 });
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 app.get("/", (req, res) => {
